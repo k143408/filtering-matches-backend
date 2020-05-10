@@ -13,7 +13,8 @@ public class RestResponseEntityExceptionHandler extends ResponseEntityExceptionH
 
     /**
      * Handle ResourceNotFoundException
-     * @param ex ResourceNotFoundException
+     *
+     * @param ex      ResourceNotFoundException
      * @param request Current Request
      * @return ResponseEntity
      */

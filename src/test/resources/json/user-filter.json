@@ -1,0 +1,20 @@
+{
+  "hasPhoto": "true",
+  "inContact": "true",
+  "favourite": "false",
+  "compatibilityScore": [
+    "0.01",
+    "0.98"
+  ],
+  "age": [
+    "18",
+    "95"
+  ],
+  "height": [
+    "135",
+    "210"
+  ],
+  "distance": "300",
+  "longitude": "51.068787",
+  "latitude": "-1.794472"
+}

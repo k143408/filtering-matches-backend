@@ -10,16 +10,16 @@ import org.springframework.context.annotation.Profile;
 @SpringBootApplication
 public class FilteringMatchesApplication {
 
-	public static void main(String[] args) {
-		SpringApplication.run(FilteringMatchesApplication.class, args);
-	}
+    public static void main(String[] args) {
+        SpringApplication.run(FilteringMatchesApplication.class, args);
+    }
 
 
-	// execute once application starts.
-	@Profile("!test")
-	@Bean
-	public CommandLineRunner commandLineRunner(UserLoaderService userLoaderService){
-		return args -> userLoaderService.execute();
-	}
+    // execute once application starts.
+    @Profile("!test")
+    @Bean
+    public CommandLineRunner commandLineRunner(UserLoaderService userLoaderService) {
+        return args -> userLoaderService.execute();
+    }
 
 }

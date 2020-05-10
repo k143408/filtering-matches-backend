@@ -4,10 +4,15 @@ import com.code.exercise.matches.BaseUnitTest;
 import com.code.exercise.matches.domain.User;
 import com.code.exercise.matches.dto.CityDto;
 import org.junit.jupiter.api.Test;
+import org.locationtech.jts.geom.Coordinate;
+import org.locationtech.jts.geom.GeometryFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.test.mock.mockito.MockBean;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertNotNull;
+import static org.mockito.ArgumentMatchers.any;
+import static org.mockito.Mockito.when;
 
 class CityDtoConverterUnitTest extends BaseUnitTest {
 
