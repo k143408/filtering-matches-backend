@@ -1,6 +1,7 @@
 package com.code.exercise.matches.repository;
 
 import com.code.exercise.matches.domain.User;
+import org.locationtech.jts.geom.Geometry;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.JpaSpecificationExecutor;
@@ -17,4 +18,7 @@ public interface UserRepository extends JpaRepository<User, Long>, JpaSpecificat
 
     @Query("FROM User u order by function('RAND')")
     List<User> randomUser(Pageable pageable);
+
+    User findByName(String name);
+
 }
