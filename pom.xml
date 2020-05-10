@@ -10,7 +10,7 @@
     </parent>
     <groupId>com.code.exercise</groupId>
     <artifactId>filtering-matches</artifactId>
-    <version>0.0.2-filter-matches-SNAPSHOT</version>
+    <version>0.0.2-SNAPSHOT</version>
     <name>filtering-matches</name>
     <description>Demo project for Spring Boot</description>
 
