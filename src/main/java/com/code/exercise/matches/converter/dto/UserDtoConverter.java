@@ -34,6 +34,7 @@ public class UserDtoConverter implements Converter<User, UserDto> {
                                 .compatibilityScore(u.getCompatibilityScore())
                                 .city(cityDtoConverter.convert(u.getCity()))
                                 .religion(u.getReligion())
+                                .distance(Optional.ofNullable(u.getDistance()).map(d -> String.valueOf(d).concat(" km")).orElse(null))
                                 .build())
                 .orElseGet(() -> UserDto.builder().build());
     }

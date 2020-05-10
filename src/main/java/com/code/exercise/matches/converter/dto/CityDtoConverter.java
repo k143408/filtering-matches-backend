@@ -2,8 +2,8 @@ package com.code.exercise.matches.converter.dto;
 
 import com.code.exercise.matches.domain.City;
 import com.code.exercise.matches.dto.CityDto;
+import org.locationtech.jts.geom.Point;
 import org.springframework.core.convert.converter.Converter;
-import org.springframework.data.geo.Point;
 import org.springframework.stereotype.Component;
 
 import java.util.Optional;

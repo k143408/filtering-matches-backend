@@ -42,4 +42,6 @@ public class User {
     })
     private City city;
 
+    private transient Double distance;
+
 }

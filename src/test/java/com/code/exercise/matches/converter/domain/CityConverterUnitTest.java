@@ -18,7 +18,7 @@ class CityConverterUnitTest extends BaseUnitTest {
         UserDto dummyUserDto = getDummyUserDto();
         City city = cityConverter.convert(dummyUserDto.getCity());
         assertNotNull(city, "City object should not be null");
-        assertEquals(city.getLocation().getX(), dummyUserDto.getCity().getLon(), "Location X should be equal");
-        assertEquals(city.getLocation().getY(), dummyUserDto.getCity().getLat(), "Location Y should be equal");
+        assertEquals(city.getLocation().getX(), dummyUserDto.getCity().getLat().doubleValue(), "Location X should be equal");
+        assertEquals(city.getLocation().getY(), dummyUserDto.getCity().getLon().doubleValue(), "Location Y should be equal");
     }
 }

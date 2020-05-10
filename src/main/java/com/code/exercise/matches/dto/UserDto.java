@@ -1,5 +1,6 @@
 package com.code.exercise.matches.dto;
 
+import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -10,6 +11,7 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @Data
 @Builder
+@JsonInclude(JsonInclude.Include.NON_NULL)
 public class UserDto {
     public static UserDto EMPTY = UserDto.builder().build();
     @JsonProperty("display_name")
@@ -29,4 +31,5 @@ public class UserDto {
     public String religion;
     public Integer age;
     public CityDto city;
+    public String distance;
 }
